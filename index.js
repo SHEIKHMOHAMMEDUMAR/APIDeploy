@@ -1,3 +1,4 @@
+import { menuItems } from "./menuItem";
 const express = require("express");
 
 // Initialize Express
@@ -5,7 +6,7 @@ const app = express();
 
 // Create GET request
 app.get("/", (req, res) => {
-  res.send("Hii Umar,u got it");
+  res.send({menuItems});
 });
 app.get("/umar", (req, res) => {
   res.send("Hii Umar,u double got it");
