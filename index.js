@@ -1,15 +1,16 @@
-import { transactions } from "./menuItem";
+import { transactions } from "./transactions";
+import { applications } from "./applications";
 const express = require("express");
 
 // Initialize Express
 const app = express();
 
 // Create GET request
-app.get("/", (req, res) => {
+app.get("/transactions", (req, res) => {
   res.send({transactions});
 });
-app.get("/umar", (req, res) => {
-  res.send("Hii Umar,u double got it");
+app.get("/applications", (req, res) => {
+  res.send({applications});
 });
 // Initialize server
 app.listen(5000, () => {
