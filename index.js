@@ -1,4 +1,4 @@
-import { menuItems } from "./menuItem";
+import { transactions } from "./menuItem";
 const express = require("express");
 
 // Initialize Express
@@ -6,7 +6,7 @@ const app = express();
 
 // Create GET request
 app.get("/", (req, res) => {
-  res.send({menuItems});
+  res.send({transactions});
 });
 app.get("/umar", (req, res) => {
   res.send("Hii Umar,u double got it");
